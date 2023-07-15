@@ -1,0 +1,13 @@
+name: "shell"
+
+build:
+  shell:
+    context: .
+    dockerfile: Dockerfile
+
+deploy:
+  compose: compose.yml
+
+dev:
+  shell:
+    command: ["ash"]

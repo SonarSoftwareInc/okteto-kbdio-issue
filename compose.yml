@@ -1,0 +1,12 @@
+services:
+  shell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: shell
+    deploy:
+      resources:
+        limits:
+          cpus: 125m
+          memory: 64M
+    command: sleep 8h
